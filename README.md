@@ -18,12 +18,10 @@
 ### 1️⃣ Ağırlıklı (Maliyet Odaklı) Algoritmalar
 Trafik yoğunluğuna göre "en ucuz" yolu hesaplarlar.
 
-* #### **Dijkstra**
-    * En düşük maliyetli rotayı kesin olarak garanti eder.
-* #### **Bellman-Ford**
-    * Negatif maliyetli yolları işleme yeteneğine sahiptir.
-    > [!WARNING]
-    > **Teknik Detay:** Algoritma negatif döngüleri tespit eder; ancak simülasyonun sürekliliği için bu ağırlıklar bilinçli olarak **0'a** limitlenmiştir (clamping).
+* **Dijkstra:** En düşük maliyetli rotayı kesin olarak garanti eder.
+* **Bellman-Ford:** Negatif maliyetli yolları işleme yeteneğine sahiptir.
+> [!WARNING]
+> **Teknik Detay:** Algoritma negatif döngüleri tespit eder; ancak simülasyonun sürekliliği için bu ağırlıklar bilinçli olarak **0'a** limitlenmiştir (clamping).
 
 
 
