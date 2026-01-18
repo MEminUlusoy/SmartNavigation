@@ -38,8 +38,8 @@ Yolların maliyeti (trafik) yoksa, hedefe en az adımda ulaşmayı hedeflerler.
 
 ## 🖼️ Simülasyon Görselleri ve Analiz
 
-###  🟥 <u> Bellman-Ford Algoritması </u>
-
+###  🟥 Bellman-Ford Algoritması: 
+---
 *Negatif maliyetlerin ve döngü kontrollerinin yapıldığı yol planlaması.*
 
 **Hedef Arama Süreci:**  
