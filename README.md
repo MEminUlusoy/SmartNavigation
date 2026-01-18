@@ -1,6 +1,6 @@
-# SmartNavigation
-Smart Navigation: Yol Planlama Simülatörü
-Smart Navigation, bir robotun farklı trafik yoğunlukları ve engeller altında en verimli yolu bulmasını sağlayan bir simülasyon projesidir. Proje, en kısa yol algoritmalarının (Dijkstra, Bellman-Ford) ve arama algoritmalarının (BFS, DFS) davranışlarını karşılaştırmalı olarak sunar.
+# Smart Navigation: Yol Planlama Simülatörü
+-Smart Navigation, bir robotun farklı trafik yoğunlukları ve engeller altında en verimli yolu bulmasını sağlayan bir simülasyon projesidir. 
+-Proje, en kısa yol algoritmalarının (Dijkstra, Bellman-Ford) ve arama algoritmalarının (BFS, DFS) davranışlarını karşılaştırmalı olarak sunar.
 
 🛠️ Kullanılan Teknolojiler
 Python: Algoritma mantığı ve uygulama geliştirme.
@@ -8,28 +8,23 @@ Numpy: Her çalıştırmada rastgele trafik yoğunluğu ve engel oluşturma (Obj
 Matplotlib: Algoritmaların harita üzerindeki hareketlerinin görselleştirilmesi.
 
 🛣️ Algoritmalar ve Yaklaşımlar
-1. Ağırlıklı (Maliyet Odaklı) Algoritmalar
+1) Ağırlıklı (Maliyet Odaklı) Algoritmalar
 Trafik yoğunluğuna göre "en ucuz" yolu hesaplarlar.
-Dijkstra: En düşük maliyetli rotayı garanti eder.
-Bellman-Ford: Negatif maliyetli yolları işleyebilir.
+- Dijkstra: En düşük maliyetli rotayı garanti eder.
+- Bellman-Ford: Negatif maliyetli yolları işleyebilir.
+    - ⚠️ Not: Algoritma negatif döngüleri tespit eder; ancak simülasyonun çökmemesi için bu ağırlıklar bilinçli olarak 0'a             limitlenmiştir.
 
-⚠️ Not: Algoritma negatif döngüleri tespit eder; ancak simülasyonun çökmemesi için bu ağırlıklar bilinçli olarak 0'a limitlenmiştir.
-
-2. Ağırlıksız (Adım Odaklı) Algoritmalar
+2) Ağırlıksız (Adım Odaklı) Algoritmalar
 Yolların ağırlığı (trafik) yoksa en az adımda hedefe ulaşmayı sağlarlar.
-
-BFS (Breadth-First Search): En kısa adım sayısını bulur ve hedefi katman katman arar.
-
-DFS (Depth-First Search): Derinlemesine arama yaparak hedefi bulur.
-
-Simülasyon Farkı: Robotun hedefe varmasından önce, harita üzerinde hedefi nasıl "taradıkları" görsel olarak simüle edilmiştir.
+- BFS (Breadth-First Search): En kısa adım sayısını bulur ve hedefi katman katman arar.
+- DFS (Depth-First Search): Derinlemesine arama yaparak hedefi bulur.
+    -Simülasyon Farkı: Robotun hedefe varmasından önce, harita üzerinde hedefi nasıl "taradıkları" görsel olarak simüle           edilmiştir.
 
 ✨ Projenin Öne Çıkan Özellikleri
-Dinamik Ortam: Numpy sayesinde her seferinde farklı bir trafik ve engel düzeni oluşur.
-
-Görsel Analiz: Algoritmaların harita üzerindeki arama stratejileri canlı olarak izlenebilir.
-
-Hata Yönetimi: Bellman-Ford üzerinde negatif döngü kontrolü (clamping) uygulanmıştır.
+- Dinamik Ortam: Numpy sayesinde her seferinde farklı bir trafik ve engel düzeni oluşur.
+- Görsel Analiz: Algoritmaların harita üzerindeki arama stratejileri canlı olarak izlenebilir.
+- Hata Yönetimi: Bellman-Ford üzerinde negatif döngü kontrolü (clamping) uygulanmıştır.
+- 
 ![Ekran görüntüsü 2026-01-18 115129](https://github.com/user-attachments/assets/5979385d-73fb-4267-acf2-93adeecaff52)
 ![Ekran görüntüsü 2026-01-18 115157](https://github.com/user-attachments/assets/ca76b2f8-04fa-47b7-8695-44d775a6b770)
 
