@@ -1,34 +1,3 @@
-# Smart Navigation: Yol Planlama Simülatörü
-- Smart Navigation, bir robotun farklı trafik yoğunlukları ve engeller altında en verimli yolu bulmasını sağlayan bir simülasyon projesidir. <br>
-- Proje, en kısa yol algoritmalarının (Dijkstra, Bellman-Ford) ve arama algoritmalarının (BFS, DFS) davranışlarını karşılaştırmalı olarak sunar. <br>
-
-<h2> 🛠️ Kullanılan Teknolojiler </h2>
-<br> Python: Algoritma mantığı ve uygulama geliştirme.
-<br> Numpy: Her çalıştırmada rastgele trafik yoğunluğu ve engel oluşturma (Objektif simülasyon).
-<br> Matplotlib: Algoritmaların harita üzerindeki hareketlerinin görselleştirilmesi.
-
-<h2>🛣️ Algoritmalar ve Yaklaşımlar </h2>
-1) Ağırlıklı (Maliyet Odaklı) Algoritmalar
-Trafik yoğunluğuna göre "en ucuz" yolu hesaplarlar.
-- <h4> Dijkstra: </h4> En düşük maliyetli rotayı garanti eder.
-- <h4> Bellman-Ford: </h4>  Negatif maliyetli yolları işleyebilir.
-    - ⚠️ Not: Algoritma negatif döngüleri tespit eder; ancak simülasyonun çökmemesi için bu ağırlıklar bilinçli olarak 0'a             limitlenmiştir.
-
-2) <h2> Ağırlıksız (Adım Odaklı) Algoritmalar </h2>
-Yolların ağırlığı (trafik) yoksa en az adımda hedefe ulaşmayı sağlarlar.
-- BFS (Breadth-First Search): En kısa adım sayısını bulur ve hedefi katman katman arar.
-- DFS (Depth-First Search): Derinlemesine arama yaparak hedefi bulur.
-    -Simülasyon Farkı: Robotun hedefe varmasından önce, harita üzerinde hedefi nasıl "taradıkları" görsel olarak simüle           edilmiştir.
-
-✨ Projenin Öne Çıkan Özellikleri
-- Dinamik Ortam: Numpy sayesinde her seferinde farklı bir trafik ve engel düzeni oluşur.
-- Görsel Analiz: Algoritmaların harita üzerindeki arama stratejileri canlı olarak izlenebilir.
-- Hata Yönetimi: Bellman-Ford üzerinde negatif döngü kontrolü (clamping) uygulanmıştır.
-
-
-
-
-
 # 🤖 Smart Navigation: Yol Planlama Simülatörü
 
 * **Proje Amacı:** Bir robotun; farklı trafik yoğunlukları ve engeller altında en verimli yolu bulmasını sağlayan bir simülasyon projesidir.
