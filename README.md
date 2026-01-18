@@ -1,20 +1,20 @@
 # Smart Navigation: Yol Planlama Simülatörü
--Smart Navigation, bir robotun farklı trafik yoğunlukları ve engeller altında en verimli yolu bulmasını sağlayan bir simülasyon projesidir. <br>
--Proje, en kısa yol algoritmalarının (Dijkstra, Bellman-Ford) ve arama algoritmalarının (BFS, DFS) davranışlarını karşılaştırmalı olarak sunar. <br>
+- Smart Navigation, bir robotun farklı trafik yoğunlukları ve engeller altında en verimli yolu bulmasını sağlayan bir simülasyon projesidir. <br>
+- Proje, en kısa yol algoritmalarının (Dijkstra, Bellman-Ford) ve arama algoritmalarının (BFS, DFS) davranışlarını karşılaştırmalı olarak sunar. <br>
 
-🛠️ Kullanılan Teknolojiler
-<br>Python: Algoritma mantığı ve uygulama geliştirme.
-<br>Numpy: Her çalıştırmada rastgele trafik yoğunluğu ve engel oluşturma (Objektif simülasyon).
-<br>Matplotlib: Algoritmaların harita üzerindeki hareketlerinin görselleştirilmesi.
+🛠️ <h2> Kullanılan Teknolojiler </h2>
+<br> Python: Algoritma mantığı ve uygulama geliştirme.
+<br> Numpy: Her çalıştırmada rastgele trafik yoğunluğu ve engel oluşturma (Objektif simülasyon).
+<br> Matplotlib: Algoritmaların harita üzerindeki hareketlerinin görselleştirilmesi.
 
-🛣️ Algoritmalar ve Yaklaşımlar
+🛣️ <h2> Algoritmalar ve Yaklaşımlar </h2>
 1) Ağırlıklı (Maliyet Odaklı) Algoritmalar
 Trafik yoğunluğuna göre "en ucuz" yolu hesaplarlar.
-- Dijkstra: En düşük maliyetli rotayı garanti eder.
-- Bellman-Ford: Negatif maliyetli yolları işleyebilir.
+- <h4> Dijkstra: </h4> En düşük maliyetli rotayı garanti eder.
+- <h4> Bellman-Ford: </h4>  Negatif maliyetli yolları işleyebilir.
     - ⚠️ Not: Algoritma negatif döngüleri tespit eder; ancak simülasyonun çökmemesi için bu ağırlıklar bilinçli olarak 0'a             limitlenmiştir.
 
-2) Ağırlıksız (Adım Odaklı) Algoritmalar
+2) <h2> Ağırlıksız (Adım Odaklı) Algoritmalar </h2>
 Yolların ağırlığı (trafik) yoksa en az adımda hedefe ulaşmayı sağlarlar.
 - BFS (Breadth-First Search): En kısa adım sayısını bulur ve hedefi katman katman arar.
 - DFS (Depth-First Search): Derinlemesine arama yaparak hedefi bulur.
