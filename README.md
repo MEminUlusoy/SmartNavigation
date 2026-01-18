@@ -52,15 +52,17 @@ Yolların maliyeti (trafik) yoksa, hedefe en az adımda ulaşmayı hedeflerler.
 
 
 ### 🟦 Dijkstra Algoritması 
-<hr>
+---
+
 *En düşük maliyetli rotanın (trafik yoğunluğu dahil) hesaplanma anı.*
 
 <img src="https://github.com/user-attachments/assets/80bb056b-de3c-4dd0-bf25-c32d8bcecc78" width="49%" height="600" /> <img src="https://github.com/user-attachments/assets/f794d5c1-793a-4c26-b61c-f6c1e1f2ac76" width="49%" height="600" />
 
 
 ### 🟩 Breadth First Search (BFS)
-<hr>
-*Arama stratejilerinin (katman katman vs. derinlemesine) harita üzerindeki tarama farkları.*
+---
+
+*Ağırlıksız yollarda, hedefi genişlemesine arayarak hedefi daha az adımda bulur*
 
 ### 🎨 Simülasyon Renk Anahtarı
 * **Başlangıç & Hedef:** 🟢 Başlangıç | 🔴 Hedef
@@ -78,7 +80,9 @@ Yolların maliyeti (trafik) yoksa, hedefe en az adımda ulaşmayı hedeflerler.
 <img src="https://github.com/user-attachments/assets/64f01eb7-b12b-4ff2-84f0-6f00ea65dc11" width="600"> 
 
 ### 🟩 Depth First Search (DFS)
-<hr>
+---
+
+*Ağırlıksız yollarda, hedefi derinlemesine arayarak hedefi daha az adımda bulur*
 
 <img src="https://github.com/user-attachments/assets/7d150a51-b5c8-4520-b1ea-6f91a19877ca" width="49%" height="600" /> <img src="https://github.com/user-attachments/assets/49e273dc-b31c-4179-afa9-bd89a7f2b9e5" width="49%" height="450" />
 
