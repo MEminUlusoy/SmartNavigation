@@ -24,7 +24,56 @@ Yolların ağırlığı (trafik) yoksa en az adımda hedefe ulaşmayı sağlarla
 - Dinamik Ortam: Numpy sayesinde her seferinde farklı bir trafik ve engel düzeni oluşur.
 - Görsel Analiz: Algoritmaların harita üzerindeki arama stratejileri canlı olarak izlenebilir.
 - Hata Yönetimi: Bellman-Ford üzerinde negatif döngü kontrolü (clamping) uygulanmıştır.
-- 
+
+
+
+
+
+# 🤖 Smart Navigation: Yol Planlama Simülatörü
+
+* **Proje Amacı:** Bir robotun; farklı trafik yoğunlukları ve engeller altında en verimli yolu bulmasını sağlayan bir simülasyon projesidir.
+* **Kapsam:** En kısa yol algoritmaları (Dijkstra, Bellman-Ford) ve arama algoritmalarının (BFS, DFS) davranışlarını karşılaştırmalı olarak sunar.
+
+---
+
+## 🛠️ Kullanılan Teknolojiler
+
+* **Python:** Algoritma mantığı ve çekirdek uygulama geliştirme.
+* **Numpy:** Her çalıştırmada rastgele trafik ve engel oluşturarak **objektif simülasyon** sağlama.
+* **Matplotlib:** Algoritmaların harita üzerindeki hareketlerinin anlık görselleştirilmesi.
+
+---
+
+## 🛣️ Algoritmalar ve Yaklaşımlar
+
+### 1️⃣ Ağırlıklı (Maliyet Odaklı) Algoritmalar
+Trafik yoğunluğuna göre "en ucuz" yolu hesaplarlar.
+
+* #### **Dijkstra**
+    * En düşük maliyetli rotayı kesin olarak garanti eder.
+* #### **Bellman-Ford**
+    * Negatif maliyetli yolları işleme yeteneğine sahiptir.
+    > [!WARNING]
+    > **Teknik Detay:** Algoritma negatif döngüleri tespit eder; ancak simülasyonun sürekliliği için bu ağırlıklar bilinçli olarak **0'a** limitlenmiştir (clamping).
+
+
+
+### 2️⃣ Ağırlıksız (Adım Odaklı) Algoritmalar
+Yolların maliyeti (trafik) yoksa, hedefe en az adımda ulaşmayı hedeflerler.
+
+* **BFS (Breadth-First Search):** Hedefi katman katman arayarak en kısa adım sayısını bulur.
+* **DFS (Depth-First Search):** Derinlemesine arama stratejisiyle hedefi bulur.
+* **Simülasyon Farkı:** Robot hedefe varmadan önce, algoritmanın harita üzerinde yaptığı **"hedef arama/tarama"** süreci görsel olarak simüle edilmiştir.
+
+
+
+---
+
+## ✨ Projenin Öne Çıkan Özellikleri
+
+* 🚀 **Dinamik Ortam:** Numpy ile her başlangıçta farklı bir trafik ve engel düzeni.
+* 📊 **Görsel Analiz:** Arama stratejilerinin harita üzerinde canlı olarak izlenebilmesi.
+* 🛠️ **Hata Yönetimi:** Bellman-Ford üzerinde gelişmiş negatif döngü kontrolü.
 ![Ekran görüntüsü 2026-01-18 115129](https://github.com/user-attachments/assets/5979385d-73fb-4267-acf2-93adeecaff52)
 ![Ekran görüntüsü 2026-01-18 115157](https://github.com/user-attachments/assets/ca76b2f8-04fa-47b7-8695-44d775a6b770)
 
