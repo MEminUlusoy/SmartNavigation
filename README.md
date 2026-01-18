@@ -3,15 +3,11 @@
 * **Proje Amacı:** Bir robotun; farklı trafik yoğunlukları ve engeller altında en verimli yolu bulmasını sağlayan bir simülasyon projesidir.
 * **Kapsam:** En kısa yol algoritmaları (Dijkstra, Bellman-Ford) ve arama algoritmalarının (BFS, DFS) davranışlarını karşılaştırmalı olarak sunar.
 
----
-
 ## 🛠️ Kullanılan Teknolojiler
 
 * **Python:** Algoritma mantığı ve çekirdek uygulama geliştirme.
 * **Numpy:** Her çalıştırmada rastgele trafik ve engel oluşturarak **objektif simülasyon** sağlama.
 * **Matplotlib:** Algoritmaların harita üzerindeki hareketlerinin anlık görselleştirilmesi.
-
----
 
 ## 🛣️ Algoritmalar ve Yaklaşımlar
 
@@ -33,9 +29,6 @@ Yolların maliyeti (trafik) yoksa, hedefe en az adımda ulaşmayı hedeflerler.
 * **Simülasyon Farkı:** Robot hedefe varmadan önce, algoritmanın harita üzerinde yaptığı **"hedef arama/tarama"** süreci görsel olarak simüle edilmiştir.
 
 
-
----
-
 ## ✨ Projenin Öne Çıkan Özellikleri
 
 * 🚀 **Dinamik Ortam:** Numpy ile her başlangıçta farklı bir trafik ve engel düzeni.
@@ -43,29 +36,27 @@ Yolların maliyeti (trafik) yoksa, hedefe en az adımda ulaşmayı hedeflerler.
 * 🛠️ **Hata Yönetimi:** Bellman-Ford üzerinde gelişmiş negatif döngü kontrolü.
 
 
-
 ## 🖼️ Simülasyon Görselleri ve Analiz
 
 
-### 🟥 Bellman-Ford Algoritması
----
+### <u> 🟥 Bellman-Ford Algoritması </u>
 *Negatif maliyetlerin ve döngü kontrollerinin yapıldığı yol planlaması.*
 
 <br>
+**Hedef Arama Süreci:**  
 
-**Hedef Arama Süreci:**    
 <br>
 ![Ekran görüntüsü 2026-01-18 115157](https://github.com/user-attachments/assets/ca76b2f8-04fa-47b7-8695-44d775a6b770)
 
 <br>
-
 **Rotanın Tamamlanması:**  
+
 <br>
 ![Ekran görüntüsü 2026-01-18 115129](https://github.com/user-attachments/assets/5979385d-73fb-4267-acf2-93adeecaff52)
 
 
-### 🟦 Dijkstra Algoritması
----
+### <u> 🟦 Dijkstra Algoritması </u>
+
 *En düşük maliyetli rotanın (trafik yoğunluğu dahil) hesaplanma anı.*
 <br>
 <br>
