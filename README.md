@@ -84,7 +84,8 @@ Yolların maliyeti (trafik) yoksa, hedefe en az adımda ulaşmayı hedeflerler.
 
 *Ağırlıksız yollarda, hedefi derinlemesine arayarak hedefi daha az adımda bulur*
 
-<img src="https://github.com/user-attachments/assets/7d150a51-b5c8-4520-b1ea-6f91a19877ca" width="49%" height="600" style="object-fit: cover; border-radius: 8px;" /> <img src="https://github.com/user-attachments/assets/49e273dc-b31c-4179-afa9-bd89a7f2b9e5" width="49%" height="600" style="object-fit: cover; border-radius: 8px;" />
+<img src="https://github.com/user-attachments/assets/7d150a51-b5c8-4520-b1ea-6f91a19877ca" width="49%" height="600"/> <img src="https://github.com/user-attachments/assets/04662957-8eb5-4493-ab3c-581bd37ffb5d" width="49%" height="600"/>
+
 
 
 
