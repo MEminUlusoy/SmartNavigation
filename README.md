@@ -61,6 +61,7 @@ Yolların maliyeti (trafik) yoksa, hedefe en az adımda ulaşmayı hedeflerler.
 ### 🟩 Breadth First Search (BFS)
 <hr>
 *Arama stratejilerinin (katman katman vs. derinlemesine) harita üzerindeki tarama farkları.*
+
 ### 🎨 Simülasyon Renk Anahtarı
 * **Başlangıç & Hedef:** 🟢 Başlangıç | 🔴 Hedef
 * **Engeller:** ⬛ Siyah Kareler (Geçilemez Alanlar)
